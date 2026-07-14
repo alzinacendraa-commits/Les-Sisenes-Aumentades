@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEB/LA SEXTA AUMENTADA</title>
+    <link rel="stylesheet" href= "style.css">
+</head>
+<body>
+  <audio id="bos-audio" autoplay>
+    <source src="bos.mp3" type="audio/mpeg">
+  </audio>
+  <script>
+    // Forzar reproducción automática con JavaScript (maneja políticas de autoplay de navegadores)
+    document.addEventListener('DOMContentLoaded', function() {
+      var audio = document.getElementById('bos-audio');
+      audio.volume = 0.3; // volumen moderado
+      var playPromise = audio.play();
+      if (playPromise !== undefined) {
+        playPromise.catch(function() {
+          // Si el autoplay es bloqueado por el navegador, intentar reproducir al primer click/touch
+          document.addEventListener('click', function playOnClick() {
+            audio.play();
+            document.removeEventListener('click', playOnClick);
+          });
+          document.addEventListener('touchstart', function playOnTouch() {
+            audio.play();
+            document.removeEventListener('touchstart', playOnTouch);
+          });
+        });
+      }
+    });
+  </script>
+  
+  <header>
+
+    <div class="images container"> 
+        <a href="#" class="logo">WEB DE LES SISENES AUMENTADES</a>
+        <input type="checkbox" id="menu">
+            <img class="menu-icono" src="menu.png" alt="">
+            <label>
+            <nav class="navbar">
+              <ul>
+                <li><img src="Acorde aumentado.jpeg" alt=""><a href="#card-interval">Interval de Sisena Aumentada</a></li>
+                <li><img src="Italia.png" alt=""><a href="#card-italiana">Sisena Italiana</a></li>
+                <li><img src="Francesa.png" alt=""><a href="#card-francesa">Sisena Francesa</a></li>
+                <li><img src="Alemanya.png" alt=""><a href="#card-alemanya">Sisena Alemanya</a></li>
+                <li><img src="suïssa.png" alt=""><a href="#card-suissa">Sisena Suïssa</a></li>
+                <li><img src="Wagner.png" alt=""><a href="#card-wagneriana">Sisena Wagneriana</a></li>
+              </ul>
+            </nav>
+    </div>
+    <div class="header-content container">
+      <div class="header-txt">
+        <h1>LES SISENES AUMENTADES</h1>
+        <p>
+
+          Són acords alterats de funció predominant, caracteritzats per l'interval de sisena augmentada
+          que es forma entre el baix i la nota superior. La seua funció principal és resoldre cromàticament cap a la dominant. Els
+          cinc tipus existents són l'italiana, la francesa, l'alemany, la suïssa i la wagneriana.
+
+        <p>
+       
+      <div>
+          
+      </div>
+    </div>
+
+  </header>
+  <section class="information">
+    <div class="header-txt">
+  <h1></h1>
+  </div>
+    <h2>DIFERENTS NACIONALITATS</h2> 
+    <div class="crono-img">
+      <img src="ChatGPT Image 14 de jul. del 2026, 19_10_07.png" alt="ÀRBRE CRONOLÒGIC">
+    </div>
+     
+  </div>
+   <a href="#cards-section" class="btn-1">Les Sisenes</a>
+  <div class="header-img">
+    <img src="interval-sisena-aumentada.jpg" alt="Interval de Sisena Aumentada">
+  </div>
+  <p>
+  
+  <section class="information" id="cards-section">
+
+    <div class="information-content container">
+
+      <div class="information-box">
+        <div class="card-1" id="card-interval">
+          <h3>Interval de Sisena Aumentada</h3>
+          <img src="interval-sisena-aumentada.jpg" alt="">
+          <span>6AUM</span>
+        </div>
+
+        <div class="card-1 card-italiana" id="card-italiana">
+          <h3>Sisena Italiana</h3>
+         <img src="sisena-italiana.jpg" alt="">
+           <span>ACORD TRIADA</span>
+
+            <audio controls>
+              <source src="Àudio Sisena Aum. Italiana.mp3" type="audio/mpeg">
+            </audio>
+
+           <div class="entrellat-section">
+             <h4>🎼 Entrellat de la Sisena Italiana</h4>
+             <p class="entrellat-desc">L'interval de <strong>sisena augmentada</strong> (Fa–Re♯) es resol per moviment cromàtic contrari cap a l'octava de la dominant (Mi–Mi). La tònica (Do) es pot mantenir com a nota comuna o resoldre a la quinta (Si).</p>
+             <img src="entrellat-italiana.svg" alt="Diagrama d'entrellat de la Sisena Italiana" class="entrellat-img">
+           </div>
+
+        </div>
+
+        <div class="card-1" id="card-francesa">
+          <h3>Sisena Francesa</h3>
+         <img src="sisena-francesa.jpg" alt="">
+           <span>ACORD QUATRIADA</span>
+
+            <audio controls>
+              <source src="Àudio Sisena Aum. Francesa.mp3" type="audio/mpeg">
+            </audio>
+
+           <div class="entrellat-section">
+             <h4>🎼 Entrellat de la Sisena Francesa</h4>
+             <p class="entrellat-desc">L'interval de <strong>sisena augmentada</strong> (Fa–Re♯) es resol per moviment cromàtic contrari cap a l'octava de la dominant (Mi–Mi). La tònica (La) descendeix un semitò cap a la sensible (Sol♯), mentre que el segon grau (Si) es manté com a nota comuna (7a del V).</p>
+             <img src="entrellat-francesa.svg" alt="Diagrama d'entrellat de la Sisena Francesa" class="entrellat-img">
+           </div>
+
+        </div>
+           
+            
+        <div class="card-1" id="card-alemanya">
+          <h3>Sisena Alemanya</h3>
+          <img src="sisena-alemanya.jpg" alt="">
+          <span>ACORD QUATRIADA</span>
+          
+            <audio controls>
+              <source src="Àudio Sisena Aum. Alemanya.mp3" type="audio/mpeg">
+            </audio>
+
+           <div class="entrellat-section">
+             <h4>🎼 Entrellat de la Sisena Alemanya</h4>
+             <p class="entrellat-desc">L'interval de <strong>sisena augmentada</strong> (Fa–Re♯) es resol per moviment cromàtic contrari cap a l'octava de la dominant (Mi–Mi). Tant el baix (Fa) com el tercer grau baixat (Do) descendeixen un semitò, creant les anomenades <strong>quintes de Mozart</strong> (quintes paral·leles Fa–Do → Mi–Si).</p>
+             <img src="entrellat-alemanya.svg" alt="Diagrama d'entrellat de la Sisena Alemanya" class="entrellat-img">
+           </div>
+
+        </div>
+
+        <div class="card-1" id="card-suissa">
+          <h3>Sisena Suïssa</h3>
+         <img src="sisena-suissa.jpg" alt="">
+           <span>ACORD QUATRIADA</span>
+
+            <audio controls>
+              <source src="Àudio Sisena Aum. Suïssa.mp3" type="audio/mpeg">
+            </audio>
+
+           <div class="entrellat-section">
+             <h4>🎼 Entrellat de la Sisena Suïssa</h4>
+             <p class="entrellat-desc">L'interval de <strong>sisena augmentada</strong> (Fa–Re♯) es resol per moviment cromàtic contrari cap a l'octava de la dominant (Mi–Mi). El tret distintiu: el tercer grau és <strong>major (Do♯)</strong> en lloc de menor, evitant les quintes paral·leles de l'Alemanya i resolent per moviment contrari enharmònic (Do♯ → La / Sol♯).</p>
+             <img src="entrellat-suissa.svg" alt="Diagrama d'entrellat de la Sisena Suïssa" class="entrellat-img">
+           </div>
+
+        </div>
+
+
+        <div class="card-1" id="card-wagneriana">
+          <h3>Sisena Wagneriana</h3>
+          <img src="sisena-wagneriana.jpg" alt="">
+          <span>ACORD QUATRIADA</span>
+
+            <audio controls>
+              <source src="Àudio Sisena Aum. Wagneriana.mp3" type="audio/mpeg">
+            </audio>
+
+           <div class="entrellat-section">
+             <h4>🎼 Entrellat de la Sisena Wagneriana</h4>
+             <p class="entrellat-desc">L'interval de <strong>sisena augmentada</strong> (Fa–Re♯) es resol per moviment cromàtic contrari cap a l'octava de la dominant (Mi–Mi). Característicament afegeix la 7a menor (Sib) i la 9a disminuïda (Re♭), creant una tensió extrema que es resoldrà cap a un acord de V⁷ amb tensions.</p>
+             <img src="entrellat-wagneriana.svg" alt="Diagrama d'entrellat de la Sisena Wagneriana" class="entrellat-img">
+           </div>
+
+        </div>
+      
+      </div>
+
+    </div>
+
+  </section>
+
+  <section class="quiz-section">
+    <div class="container" style="text-align: center; padding: 60px 20px;">
+      <div style="max-width: 600px; margin: 0 auto;">
+        <div style="font-size: 3rem; margin-bottom: 15px;">🎵</div>
+        <h2 style="font-family: 'Playfair Display', serif; font-size: 2.2rem; color: #c9a84c; margin-bottom: 15px; letter-spacing: 1px;">Posa't a prova!</h2>
+        <p style="font-size: 1.05rem; color: #b0b0b0; margin-bottom: 30px; line-height: 1.6;">Fes el qüestionari interactiu i descobreix si domines les sisenes augmentades</p>
+        <a href="Qüestionari Interactiu de les Sisenes Aumentades/quiz.html" class="btn-1" style="display: inline-block; padding: 14px 40px; font-size: 1rem;">Començar Qüestionari →</a>
+      </div>
+    </div>
+  </section>
+  
+</body>
+</html>
